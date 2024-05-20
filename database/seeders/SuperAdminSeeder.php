@@ -16,21 +16,21 @@ class SuperAdminSeeder extends Seeder
     {
         // Creating Super Admin User
         $superAdmin = User::create([
-            'name' => 'Rivo',
+            'name' => 'Rasyid',
             'email' => 'superadmin@roles.id',
             'password' => Hash::make('123456')
         ]);
         $superAdmin->assignRole('Super Admin');
         // Creating Admin User
         $admin = User::create([
-            'name' => 'Meri',
+            'name' => 'Jua',
             'email' => 'admin@roles.id',
             'password' => Hash::make('123456')
         ]);
         $admin->assignRole('Admin');
         // Creating Product Manager User
         $productManager = User::create([
-            'name' => 'Fahri',
+            'name' => 'Ajja',
             'email' => 'operator@roles.id',
             'password' => Hash::make('123456')
         ]);
@@ -38,7 +38,7 @@ class SuperAdminSeeder extends Seeder
 
         //mengikuti tugas
         $adminBaak = User::create([
-            'name' => "Bakri",
+            'name' => "Hafiid",
             'email' => 'adminbaak@roles.id',
             'password' => Hash::make('123456')
         ]);
